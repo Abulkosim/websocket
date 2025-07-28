@@ -23,3 +23,17 @@ io.on('connection', (socket) => {
 server.listen(3000, () => {
   console.log('server running at http://localhost:3000');
 });
+
+// io.on('connection', (socket) => {
+//   // join the room named 'some room'
+//   socket.join('some room');
+  
+//   // broadcast to all connected clients in the room
+//   io.to('some room').emit('hello', 'world');
+
+//   // broadcast to all connected clients except those in the room
+//   io.except('some room').emit('hello', 'world');
+
+//   // leave the room
+//   socket.leave('some room');
+// });
